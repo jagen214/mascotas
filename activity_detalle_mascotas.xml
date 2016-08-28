@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ingvictorgarcia.tarea_mascotas.Detalle_mascotas">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <include android:id="@+id/miActionbar"
+            layout="@layout/actionbar"
+            >
+        </include>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Rmascotas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/Iregresa"
+        android:layout_width="@dimen/tamaño_iconosbarra"
+        android:layout_height="@dimen/tamaño_iconosbarra"
+        android:src="@drawable/back_64"
+        android:onClick="irRegreso"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/linearLayout"
+        />
+    <TextView
+        android:id="@+id/Tmascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_secundario"
+        android:textColor="@color/titulos"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/miActionbar"
+        />
+</RelativeLayout>
+
